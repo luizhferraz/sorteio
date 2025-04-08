@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.number-display {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:first-child {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+button:last-child {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: #ff6b6b;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: rgba(255, 107, 107, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-top: 1rem;
+  color: #61dafb;
+}
+
+.history-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  max-width: 80%;
+  width: 600px;
+}
+
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.history-number {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  min-width: 2rem;
+}

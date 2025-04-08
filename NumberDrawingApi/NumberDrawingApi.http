@@ -1,0 +1,6 @@
+@NumberDrawingApi_HostAddress = http://localhost:5234
+
+GET {{NumberDrawingApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
